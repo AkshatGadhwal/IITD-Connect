@@ -5,7 +5,7 @@ const authenticate = (req,res,next) => {
     const token = req.cookies['token'];
 
     if(!token){
-        return res.status(401).send("not autherixed")
+        return res.status(401).send("not authorised")
     }
 
     // const token = req.cookies['token']
